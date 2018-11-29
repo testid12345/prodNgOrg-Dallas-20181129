@@ -1,0 +1,67 @@
+{
+  "id": "2c2f208d-ec39-4d34-9ce2-9f0773603881",
+  "version": "1.1",
+  "name": "Untitled Project",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "6ee4e722-011a-43af-801c-26094f141a20",
+    "name": "google_search_cnn",
+    "commands": [{
+      "id": "e6ef46df-5cc7-46fb-92c6-eb28879bd6a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1371036-916e-4de9-8bea-a1ee0a37fd99",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e89ac59-11c8-483b-a6a9-bc5897187da4",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "cnn"
+    }, {
+      "id": "9aaa1320-f7a5-406b-a8e9-067bbd9f22a0",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=input[name=\"q\"]", "css"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "7aa9690d-86bd-4253-8851-271902f0e791",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ee4e722-011a-43af-801c-26094f141a20"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}
